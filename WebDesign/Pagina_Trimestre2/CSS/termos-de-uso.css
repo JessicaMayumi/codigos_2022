@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F7F7F2;
+}
+
+header {
+    background-image: url(../IMAGENS/background-termos-de-uso.png) ;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-bottom: 2px solid #2E251B;
+}
+
+header a {
+    color: #F7F7F2;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+header a:visited, header a:active, header a:link {
+    color: #F7F7F2 ;
+}
+
+a:hover {
+    color: #837667;
+}
+
+b {
+    width: 19px;
+    height: 19px;
+    padding: 0px 20px 20px 10px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    margin: 40px;
+    background-color: #53402B;
+    border-radius: 100px;
+    color:#F7F7F2;
+    text-shadow: 3px 3px #2E251B;
+    outline: 3px dotted #2E251B;
+    outline-offset: 5px;
+}
+
+main {
+    margin: 100px 350px;
+}
+
+footer {
+    background-image: url(../IMAGENS/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer h2, footer p {
+    color: #F7F7F2;
+}
+
+.footer-1 {
+    margin: 200px 0 100px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.footer-2 {
+    margin: 180px 0 100px 0;
+    text-align: center;
+    line-height: 2.5;
+}
+
+textarea {
+    background-color: #53402B;
+    border-radius: 30px;
+    border: 2px solid #F7F7F2;
+}
+
+p, h2, h3, li {
+    color: #2E251B;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+main a {
+    color: #2E251B;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: rgba(102, 100, 100, 0.5);
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(../IMAGENS/background-pagina-em-construcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transform: translate(-23%,70%);
+    left: 50%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:active, a:link {
+    color: #F5F2EA ;
+}
+
+a:hover {
+    color: #b9b29f;
+}
+
+main >h2 {
+    text-transform: uppercase;
+    color: #F5F2EA;
+    width: 500px;
+    position: relative;
+    font-size: 325%;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+@keyframes texto {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(45deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+h2:hover {
+    animation-name: texto;
+    animation-duration: .1s;
+    animation-iteration-count: 2;
+}
+
+main > a {
+    position: relative;
+    padding: 30px;
+    background-color: #F5F2EA;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 60px;
+
+}
+
+main > a:hover {
+    background-color: #b9b29f;
+}
+
+*::selection {
+    background-color: rgba(102, 100, 100, 0.5);
+}

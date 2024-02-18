@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F7F7F2;
+}
+
+header {
+    background-image: url(../IMAGENS/background-casos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 3px solid #2E251B;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:visited, a:active, a:link {
+    color:#F5F2EA ;
+}
+
+a:hover {
+    color: #b9b29f;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid #F5F2EA;
+}
+
+b {
+    width: 19px;
+    height: 19px;
+    padding: 0px 20px 20px 10px;
+}
+
+.voltar {
+    font-size: 16px;
+    color: #F7F7F2;
+    margin-top: 20px;
+}
+
+a {
+    font-weight: 600;
+}
+
+.titulo {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+    width: 85%;
+    margin-bottom: 50px ;
+}
+
+.titulo:hover {
+    width: 90%;
+    transition: .5s;
+}
+
+.audio {
+    padding: 5px;  
+    background-color: #2E251B; 
+    border-radius: 50px; 
+    width: 50%; 
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    outline: 2px #272017;
+    outline-style: dotted;
+    outline-offset: 10px;
+}
+
+main section {
+    border: 1px;
+    border-style: solid;
+    padding: 100px;
+    position: relative;
+    margin: 10%;
+    border-radius: 70px;
+    margin-top: 25px;
+}
+
+main section h3 {
+    font-size: 18px;
+}
+
+main section p {
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+p::first-letter {
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+main section h2 {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.escrito {
+    position: absolute;
+    left: 110px;
+    top: 115px;
+    z-index: -1;
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
+}
+
+.data {
+    position: absolute;
+    right: 85px;
+    top: 105px;
+    z-index: -1;
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
+}
+
+.div-imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.div-imagem > img {
+    width: 320px;
+    height: 320px;
+    border-radius: 40px;
+}
+
+footer {
+    background-image: url(../IMAGENS/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer h2, footer p {
+    color: #F7F7F2;
+}
+
+.footer-1 {
+    margin: 200px 0 100px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.footer-2 {
+    margin: 180px 0 100px 0;
+    text-align: center;
+    line-height: 2.5;
+}
+
+textarea {
+    background-color: #53402B;
+    border-radius: 30px;
+    border: 2px solid #F7F7F2;
+}
+
+
+/* Darkmode
+referência: https://redstapler.co/pure-css-minimal-dark-mode-toggle-button/ */
+
+label {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    background-color: #242424;
+    border: 3px solid #F7F7F2;
+    border-radius: 50px;
+    background-image: url(../IMAGENS/lua.png);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: center;
+    right: 3%;
+    bottom: 5%;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + label {
+    background: #F7F7F2;
+    background-image: url(../IMAGENS/sol.png);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: center;
+}
+
+label, label:after {
+    transition: 0.3s
+}
+
+input:checked + label + .background {
+    background-color: #3a3a3a;
+    color: #F7F7F2;
+}
+
+.background {
+    z-index: -1;
+    transition: 0.3s;
+}
+
+
+/*drop down*/
+
+.droptop ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.droptop ul li{
+    display: inline;
+    position: relative;
+}
+
+.droptop ul li h2{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+ul:first-child li {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*parte que desce*/
+
+.droptop ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.droptop ul li:hover ul {
+    display: block;
+    width: 340px;
+}
+
+.droptop ul ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+.droptop ul ul {
+    width: 250px;
+}
+
+/*Fundo do bloco*/
+
+.droptop ul li:hover ul {
+    text-align: center;
+    color: #F7F7F2;
+    background-color: rgba(156, 145, 131, 0.8);
+    border: 3px solid #272017;
+    text-shadow: 2px 2px #272017;
+}
+
+.droptop ul li:hover ul {
+    border-radius: 20px;
+}
+
+.droptop ul li ul a:hover{
+    background-color: #53402B;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: .2s
+}
+
+header h2 {
+    color: #F7F7F2 ;
+}
+
+header h2:hover {
+    color: #b9b29f;
+}
+
+nav * {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+*::selection {
+    background-color: rgba(102, 100, 100, 0.5);
+}
+
+.logo {
+    height: 60px;
+}
+
+.droptop {
+    margin-top: 20px;
+}
