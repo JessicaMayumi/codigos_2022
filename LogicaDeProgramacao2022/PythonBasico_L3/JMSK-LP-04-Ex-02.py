@@ -1,0 +1,18 @@
+a = int ( input ("Digite um n°: "))
+b = int ( input ("Digite outro n°: "))
+
+soma = ( a + b )
+diferença = ( b - a )
+produto = ( a * b )
+divisao_inteira = ( a // b )
+divisao_real = ( a / b ) 
+resto = ( a % b )
+raiz_quadrada = ( a**b )
+
+print ("A soma dessa conta é: ", soma )
+print ("A diferença dessa conta é: ", diferença )
+print ("O produto dessa conta é: ", produto )
+print ("O quociente inteiro dessa conta é: ", divisao_inteira )
+print ("O quociente real dessa conta é: ", divisao_real)
+print ("O resto da divisão dessa conta é: ", resto)
+print (" A raíz quadrada dessa conta é: ", raiz_quadrada )
