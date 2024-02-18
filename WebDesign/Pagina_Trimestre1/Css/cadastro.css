@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #B3CEE1;
+    font-size: 100%;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+form {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #041328;
+}
+
+.title {
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #041328;
+    margin-left: 12%;
+} 
+
+.subtitle {
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    color: #041328;
+    margin-left: 8%;
+} 
+
+fieldset {
+    border: 0;
+}
+
+.div label {
+    text-shadow: 1px 1px 1px #385279;
+    margin-bottom: 3.2px;
+    color: #041328;
+    display: block;
+}
+
+input:focus, select:focus, textarea:focus {
+    background: #EED0A5;
+}
+
+input::placeholder {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 18px;
+    color: #041328;
+}
+
+input, select, textarea {
+    border-radius: 5px;
+    border: 1px solid #041328;
+    background-color: #FAAF40;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px #385279;
+    padding: 10px 20px;
+}
+
+.fieldset-1, .fieldset-2, .fieldset-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 10px;
+}
+
+.fieldset-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin-top: 15px;
+}
+
+select {
+    padding: 10px 51px;
+}
+
+.select {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    color: #041328
+}
+
+input[type="radio"] {
+    height: 15px;
+}
+
+.div-radio {
+    margin-top: 15px;
+    text-shadow: 1px 1px 1px #385279;
+}
+
+#submit {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FAAF40;
+    background: #041328;
+    border: 0;
+    margin-bottom: 16px;
+    padding: 15px 75px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-left: 1px;
+}
+
+#reset { 
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FAAF40;
+    background: #041328;
+    border: 0;
+    margin-bottom: 16px;
+    padding: 15px 90px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-left: 32px;
+}
+
+#submit:hover, #reset:hover {
+    background: #0f2b55;
+    box-shadow: inset 2px 2px 2px #385279;
+}

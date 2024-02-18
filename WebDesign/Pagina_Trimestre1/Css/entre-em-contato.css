@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #041328
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.header-img {
+    height: 70px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 80px;
+}
+
+.header-nav-item {
+    font-family: 'Patrick Hand', cursive;
+    color: #8497B5;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.header-nav-item:hover {
+    color: #4F678B;
+}
+
+.main {
+    border-top: 0.4px solid #8497B5;
+    margin-bottom: 48px;
+}
+
+.main-section-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 65px;
+    height: 590px;
+}
+
+.main-section-img-1 {
+    margin-left: 100px;
+    height: 450px;
+}
+
+.main-section-div-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-section-div-title-1 {
+    margin-left: 90px;
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    color: #B3CEE1;
+}
+
+label {
+    margin-right: 400px;
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    color: #B3CEE1;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #FAAF40;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px #385279;
+    padding: 8px 15px;
+    margin-left: 0px;
+}
+
+#button {
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #041328;
+    background: #FAAF40;
+    border: 0;
+    padding: 8px 35px;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-left: 27%;
+    margin-right: 50%;
+}
+
+#button:hover {
+    background: #856029;
+}
+
+.main-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.main-section-subtitle-2 {
+    padding: 8px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #98B2DA;
+    margin-left: 60px;
+}
+
+.main-section-p-2 {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    color: #98B2DA;
+    margin-left: 30px;
+}
+
+.footer {
+    padding: 32px;
+    border-top: 0.4px solid #8497B5;
+    margin-top: 64px;
+}
+
+.footer-img {
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}

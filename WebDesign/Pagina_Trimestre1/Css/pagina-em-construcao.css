@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #041328
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.header-img {
+    height: 70px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 80px;
+}
+
+.header-nav-item {
+    font-family: 'Patrick Hand', cursive;
+    color: #8497B5;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.header-nav-item:hover {
+    color: #4F678B;
+}
+
+.main {
+    border-top: 0.4px solid #8497B5;
+    margin-bottom: 48px;
+}
+
+.main-img {
+    padding-top: 50px;
+    margin-top: 74px;
+    height: 680px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 32px;
+    border-top: 0.4px solid #8497B5;
+    margin-top: 64px;
+}
+
+.footer-img {
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}

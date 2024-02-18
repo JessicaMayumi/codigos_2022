@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #041328;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.header-img {
+    height: 70px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 80px;
+}
+
+.header-nav-item {
+    font-family: 'Patrick Hand', cursive;
+    color: #8497B5;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.header-nav-item:hover {
+    color: #4F678B;
+}
+
+.main {
+    border-top: 0.4px solid #8497B5;
+    padding: 48px;
+    margin-bottom: 48px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 30px;
+}
+
+.main-section-div, .main-div-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-section-div-title {
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: #B3CEE1;
+}
+
+.main-section-div-subtitle{
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: #B3CEE1;
+}
+
+.main-section-div-p {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #B3CEE1;
+    padding: 32px;
+}
+
+.main-div-2-p{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #B3CEE1;
+}
+
+.footer {
+    padding: 32px;
+    border-top: 0.4px solid #8497B5;
+    margin-top: 64px;
+}
+
+.footer-img {
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Tabela */
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.tg td {
+    border-color:white;
+    border-style:solid;
+    border-width:1px;
+    font-family: 'Patrick Hand', cursive;
+    font-size:20px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg th {
+    border-color:white;
+    border-style:solid;
+    border-width:1px;
+    font-family: 'Patrick Hand', cursive;
+    font-size:16px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;}
+
+.tg .tg-a6a3 {
+    background-color:rgba(175, 128, 215, 0.15);
+    border-color:inherit;
+    color:#b09be7;
+    font-family: 'Patrick Hand', cursive !important;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-f9x3 {background-color:rgba(215, 128, 128, 0.15);
+    border-color:inherit;
+    color:#ffccc9;
+    font-family: 'Patrick Hand', cursive !important;
+    font-size:16px;font-weight:bold;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-6u0c {
+    background-color:rgba(255, 167, 54, 0.15);
+    border-color:inherit;
+    color:#ffce93;
+    font-family: 'Patrick Hand', cursive !important;
+    font-size:16px;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-5jvx {
+    background-color:rgba(206, 215, 128, 0.15);
+    border-color:inherit;color:#f4e2a1;
+    font-family: 'Patrick Hand', cursive !important;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-3nqc {
+    background-color:rgba(141, 215, 128, 0.15);
+    border-color:inherit;
+    color:#afe0b4;
+    font-family: 'Patrick Hand', cursive !important;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-xv80 {
+    background-color: rgba(128, 191, 215, 0.15);
+    border-color:inherit;color:#a2d6f1;
+    font-family: 'Patrick Hand', cursive !important;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-i4ca {
+    background-color:rgba(175, 128, 215, 0.15);
+    border-color:inherit;
+    color:#b09be7;
+    font-family: 'Patrick Hand', cursive !important;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-d7oj {
+    background-color:rgba(255, 167, 54, 0.15);
+    border-color:inherit;
+    color:#ffce93;
+    font-family: 'Patrick Hand', cursive !important;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-qk10 {
+    background-color:rgba(206, 215, 128, 0.15);
+    border-color:inherit;
+    color:#f4e2a1;
+    font-family: 'Patrick Hand', cursive !important;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-sg6l {
+    background-color:rgba(141, 215, 128, 0.15);
+    border-color:inherit;
+    color:#afe0b4;
+    font-family: 'Patrick Hand', cursive !important;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-y8ox {
+    background-color:rgba(128, 191, 215, 0.15);
+    border-color:inherit;
+    color:#a2d6f1;
+    font-family: 'Patrick Hand', cursive !important;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-dapt {
+    background-color: rgba(215, 128, 189, 0.15);
+    border-color:inherit;
+    color:#e8b1f2;
+    font-family: 'Patrick Hand', cursive !important;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-l8s0 {
+    background-color:rgba(215, 128, 189, 0.15);
+    border-color:inherit;
+    color:#e8b1f2;
+    font-family: 'Patrick Hand', cursive !important;
+    text-align:center;
+    vertical-align:top
+}
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+    .tg col {
+        width: auto !important;
+    }
+    .tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

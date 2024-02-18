@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #B3CEE1;
+    font-size: 100%;
+    margin-left: 200px;
+    margin-top: 165px;
+    justify-content: center;
+}
+
+form {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #041328;
+    text-shadow: 1px 1px 1px #385279;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.title {
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #041328;
+    margin-left: 39%;
+} 
+
+input {
+    border-radius: 5px;
+    border: 1px solid #041328;
+    background-color: #FAAF40;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px #385279;
+    padding: 10px 20px;
+    margin-left: 32%;
+    margin-right: 45%;
+}
+
+input:focus {
+    background: #EED0A5;
+}
+
+label {
+    margin-top: 5px;
+    margin-left: 32%;
+}
+
+.cadastro {
+    color: #041328;
+    font-size: 16px;
+    margin-left: 32%;
+    margin-top: 5px;
+}
+
+#button {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FAAF40;
+    background: #041328;
+    border: 0;
+    padding: 5px 5px;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    margin-left: 38%;
+    margin-right: 50%;
+}
+
+#button:hover {
+    background: #0f2b55;
+    box-shadow: inset 2px 2px 2px #385279;
+}
