@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&display=swap');
+
+* {
+    text-align: center;
+}
+
+body {
+    background-color: #FCB400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    overflow-x: hidden;
+}
+
+.coffee {
+    background-image: url(../IMAGENS/page_under_construction/gif_coffee.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 740px;
+    height: 490px;
+    border: solid 3px #11060465;
+    box-shadow:
+    0 0 3px #11060465,
+    0 0 6px #11060465,
+    0 0 18px #11060465,
+    0 0 36px #11060465,
+    0 0 78px #11060465,
+    0 0 88px #11060465,
+    0 0 98px #11060465,
+    0 0 147px #11060465;
+    border-radius: 1150px;
+    transition: .5s;
+}
+
+div {
+    width: 45%;
+    
+}
+
+.coffee:hover {
+    transform:scale(1.3);
+}
+
+h2 {
+    color:#520D10;
+    font-size: 68px;
+    font-family: 'Headland One', serif;
+    letter-spacing: 1px;
+}
+
+h2:first-child {
+    font-weight: bold;
+    -webkit-text-stroke: 3px #520D10;
+    font-size: 108px;
+    letter-spacing: 30px;
+}
+
+h3{
+    color: #110604;
+    font-size: 70px;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 4px;
+}
+
+h4{
+    color: #110604;
+    font-size: 60px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+@media screen and (max-width:1500px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+a {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #110604;
+}
+
+img {
+    transform: rotate(180deg);
+    width: 13px;
+}

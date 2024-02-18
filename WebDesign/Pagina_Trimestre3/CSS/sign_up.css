@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+* {
+    font-family: 'Headland One', serif;
+}
+
+body {
+    background-color: #D6D6D6;
+    overflow: hidden;
+}
+
+.sec-1 {
+    margin: 0% 30%;
+}
+
+.div-title {
+    width: 280px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: -25px;
+}
+
+h2 {
+    font-size: 54px;
+    border-bottom: solid 2px #110604;
+    filter: drop-shadow(2px 5px 4px rgba(0, 0, 0, 0.4));
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 70px;
+}
+
+input,select {
+    background: #B4712E;
+    padding: 10px 13px;
+    border: solid 1px #110604;
+    border-radius: 30px;
+    width: 40%;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+
+input::placeholder, option, input:read-write {
+    color: #110604;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+input[type=radio] {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.0);
+    filter: drop-shadow(2px 5px 4px rgba(0, 0, 0, 0.2));
+}
+
+label, a, p {
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Fieldset */
+
+fieldset {
+    border: none;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fieldset-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 6%;
+    font-size: 14px;
+}
+
+.fieldset-6 div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.fieldset-6 label {
+    margin-left: 15px;
+}
+
+#email {
+    width: 100%;
+}
+
+#pais {
+    width: 40%;
+    -webkit-appearance: none;  
+    -moz-appearance: none;
+    background-image: url(../IMAGENS/sign_up/select.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+}
+
+#pais:hover {
+    background-image: url(../IMAGENS/sign_up/select_hover.png);
+}
+
+input:hover, select:hover {
+    background-color: #A87E67;
+}
+
+#submit {
+    background-color: #110604;
+    color: #D6D6D6;
+}
+
+#submit:hover{
+    background-color: #381e19;
+}
+
+#clear {
+    background-color: #520D10;
+    color: #D6D6D6;
+}
+
+#clear:hover {
+    background-color: #7B161A;
+}
+
+.fieldset-9 input{
+    padding: 10px;
+    border: none;
+    font-size: 28px;
+    width: 45%;
+}
+
+.fieldset-8-terms label {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 5px;
+    font-size: 12px;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.fieldset-8-terms input {
+    width: 30px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+a ,a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #7B161A;
+    -webkit-text-stroke: .5px #7B161A;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1080px){
+    .fieldset-6, .fieldset-9 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .fieldset-9 {
+        align-items: center;    
+    }
+    .fieldset-9 input {
+        width: 90%;
+    }
+    input::placeholder, option, select {
+        font-size: 12px;
+    }
+    fieldset{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    #email {
+        width: 90%;
+    }
+    #pais {
+        width: 90%;
+    }
+    .sec-1 {
+        margin: 0% 10%;
+    }
+    .fieldset-6 div{
+        flex-direction: row;
+        gap: 2px;
+        justify-content: start;
+        width: 30px;
+    }
+    body {
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+}
+
+/* Checkbox */
+.fieldset-8-terms label {
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.fieldset-8-terms label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: #9F5B17;
+    transform: translate(0,-10%);
+    border: 1px solid #110604;
+}
+
+.fieldset-8-terms label:hover input ~ .checkmark {
+    background-color: #A87E67;
+}
+
+.fieldset-8-terms label input:checked ~ .checkmark {
+    background-color: #110604;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.fieldset-8-terms label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.fieldset-8-terms label .checkmark:after {
+    left: 4px;
+    top: .5px;
+    width: 3px;
+    height: 6px;
+    border: solid #D6D6D6;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#Checkbox {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Circle */
+
+.circle {
+    position: absolute;    
+    border-radius:360px ;
+}
+
+.circle-1 {
+    width: 360px;
+    height: 360px;
+    background-color: rgb(61, 50, 40);
+    left: 230px;
+    top: -250px;
+    z-index: -10;
+}
+
+.circle-2 {
+    width: 360px;
+    height: 360px;
+    background-color: rgba(17, 6, 4, 1);
+    left: -250px;
+    bottom: 150px;
+    z-index: -10;
+}
+
+.circle-3 {
+    width: 360px;
+    height: 360px;
+    border: solid 1px;
+    border: solid 1px rgba(159, 91, 23, 1);
+    left: -270px;
+    bottom: 80px;
+    z-index: -10;
+}
+
+.circle-4 {
+    width: 240px;
+    height: 240px;
+    background-color: rgba(159, 91, 23, .5);
+    left: 250px;
+    bottom: -180px;
+    z-index: -10;
+}
+
+.circle-5 {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(168, 126, 103, .5);
+    left: 1000px;
+    bottom: 10px;
+    z-index: -10;
+}
+
+.circle-6 {
+    width: 200px;
+    height: 200px;
+    border: solid 1px rgba(17, 6, 4, .7);
+    left: 1050px;
+    bottom: -20px;
+    z-index: -10;
+}
+
+.circle-7 {
+    width: 130px;
+    height: 130px;
+    border: solid 1px rgba(17, 6, 4, 1);
+    left: 1350px;
+    top: 110px;
+    z-index: -10;
+}
+
+.circle-8 {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(159, 91, 23, 1);
+    left: 1250px;
+    top: 90px;
+    z-index: -11;
+}
+
+.circle-9 {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(159, 91, 23, 1);
+    left: 1300px;
+    top: 60px;
+    z-index: -11;
+}
+
+.circle-10 {
+    width: 40px;
+    height: 40px;
+    border: solid 1px rgba(168, 126, 103, 1);
+    left: 480px;
+    top: 280px;
+    z-index: -11;
+}

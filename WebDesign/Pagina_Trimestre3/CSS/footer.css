@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+footer *{
+    font-family: 'Hammersmith One', sans-serif;
+    color: #FFFBF3;
+}
+
+footer {
+    background-color: #221508;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 2px;
+}
+
+footer li {
+    text-decoration: none;
+    list-style: none;
+}
+
+footer .sec-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 90%;
+    gap: 5%;
+    margin-bottom: 30px;
+}
+
+footer .sec-1 div {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .div-1-logo img {
+    width: 150px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin: 20px;
+}
+
+footer a, footer a:visited, footer a:link, footer a:active{
+    color: #FFFBF3 !important;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #B4712E !important;
+}
+
+footer .div-2-contact ul, .div-3-about ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    left: -30px;
+    gap: 30px;
+    letter-spacing: 2px;
+}
+
+footer h2 {
+    padding: 20px 0px;
+}
+
+footer .div-2-contact hr, .div-3-about hr{
+    margin-top: -25px;
+    border-top: solid 2px #FFFBF3;
+}
+
+footer ul li {
+    font-size: 16px;
+}
+
+footer .sec-2 {
+    width: 70%;
+}
+
+footer .sec-2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding: 40px 0px 50px 0px;
+    border-top: solid 2px #FFFBF3;
+}
+
+footer .sec-2 img {
+    width: 50px;
+}
+
+footer .sec-2 img:hover {
+    filter: brightness(.7);
+}
+
+/* Media */
+
+@media (max-width:1150px){
+    footer .sec-1{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px
+    }
+
+    footer .sec-1 div {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer ul {
+        left: 0%;
+    }
+
+    footer .sec-2 {
+        justify-content: start;
+    }
+
+    .div-1-logo img {
+        display: none;
+    }
+}

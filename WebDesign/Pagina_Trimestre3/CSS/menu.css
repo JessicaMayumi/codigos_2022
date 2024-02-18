@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+nav *{
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+/* IMG */
+
+.img-logo {
+    width: 250px;
+}
+ 
+nav a > img {
+    width: 25px;
+}
+
+/* ------- */
+
+/* Header */
+
+nav, header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0% 5%;
+    padding: 10px;
+}
+
+nav a, a:visited,a:link,a:active {
+    color: #110604;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover:not(:last-child){
+    color: #7B161A !important;
+    cursor: pointer;
+    border-bottom: solid 2px #7B161A;
+}
+
+nav li a:hover {
+    background-color: transparent !important;
+    border-bottom: solid 2px #7B161A;
+    width: 80px;
+}
+
+nav ul {
+    background-color: rgb(238, 238, 238) !important;
+    border: solid 2px #110604 !important;
+}
+
+nav li a{
+    color: #110604 !important;
+}
+
+.dropdown-toggle {
+    text-decoration: none !important;
+}
+

@@ -1,0 +1,32 @@
+.dark-mode  {
+    background-color: #110604;
+    color: #D6D6D6;
+  }
+
+.dark-mode a, .dark-mode a:visited, .dark-mode a:link, .dark-mode a:active, .dark-mode main h3 {
+    color: #D6D6D6;
+}  
+
+.dark-mode nav img {
+    filter: brightness(60) grayscale(100%);
+}
+
+.darkmode {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    border: solid 1px #110604;
+    border-radius: 100px;
+    background-image: url(../IMAGENS/menu_and_footer/sol-e-lua.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #B4712E;
+    right: 50px;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.darkmode:hover {
+    filter: brightness(.7);
+}
