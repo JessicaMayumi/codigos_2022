@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killer News - Crie sua Conta</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/cadastro.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="../ICONS/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../ICONS/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../ICONS/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../ICONS/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../ICONS/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../ICONS/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../ICONS/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../ICONS/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../ICONS/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../ICONS/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ICONS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../ICONS/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ICONS/favicon-16x16.png">
+    <link rel="manifest" href="../ICONS/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../ICONS/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <main>
+        <section class="form">
+            <div class="header">
+                <a href="index.html"><img style="cursor: pointer;" id="seta" src="../IMAGENS/seta.png" alt="Seta para voltar"></a>
+                <h1>Cadastre - se</h1>
+            </div>
+            <form action="index.html" method="get">
+                <fieldset class="fieldset-1">
+                        <input id="name" type="text" name="name" placeholder="Nome" size="25" required>
+                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome ( opcional )" size="25">       
+                </fieldset>
+                <fieldset class="fieldset-2">
+                        <input id="username" type="text" name="username" minlength="4" maxlength="32" placeholder="Nome de Usuário" size="25" required>
+                        <input id="password" type="password" name="password" minlength="6" placeholder="Senha" size="25" required>
+                </fieldset>
+                <fieldset class="fieldset-3">
+                        <input id="email" type="email" name="email" placeholder="Email" size="58" required>
+                </fieldset>
+                <fieldset class="fieldset-4">
+                        <input id="phone" type="text" name="phone" placeholder="N° de Celular" size="25">
+                        <div class="div-select">
+                            <select id="pais" class="select" required>
+                                <option selected disabled value="">País</option>
+                                <option value="alemanha">Alemanha</option>
+                                <option value="arábia">Arábia</option>
+                                <option value="argélia">Argélia</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="canadá">Canadá</option>
+                                <option value="chile">Chile</option>
+                                <option value="china">China</option>
+                                <option value="coreia">Coreia</option>
+                                <option value="equador">Equador</option>
+                                <option value="estados unidos">Estados Unidos</option>
+                                <option value="índia">Índia</option>
+                                <option value="japão">Japão</option>
+                                <option value="méxico">México</option>
+                                <option value="paraguai">Paraguai</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="reino unido">Reino Unido</option>
+                                <option value="rússia">Rússia</option>
+                                <option value="ucrânia">Ucrânia</option>
+                                <option value="uruguai">Uruguai</option>
+                            </select>
+                        </div>
+                </fieldset>
+                <fieldset class="fieldset-5">
+                    <label>Gênero:</label>
+                    <br>
+                    <input class="fem" type="radio" name="gender" value="feminino" >
+                    <label class="fem">Feminino</label>
+                    <input class="mas" type="radio" name="gender" value="masculino">
+                    <label class="mas">Masculino</label>
+                    <input class="out " type="radio" name="gender" value="outro" checked>
+                    <label class="out">Outro</label>
+                </fieldset>
+                <fieldset class="fieldset-6">
+                        <label>Data de Nascimento:</label>
+                        <input id="date" type="date" name="date" min="1900-01-01" required>
+                </fieldset> 
+                <fieldset class="fieldset-7">
+                    <input type="checkbox" id="Checkbox" name="checkbox">
+                    <label class="checkmark" for="Checkbox"></label>Li e concordo com os <a class="a" href="termos-de-uso-cadastro.html">Termos de Uso</a>
+                </fieldset>
+                <fieldset class="fieldset-8">
+                    <input id="submit" type="submit" value="Cadastrar">  
+                    <input id="reset" type="reset" value="Limpar">    
+                </fieldset>
+            </form>
+        </section>
+        <section class="caso">
+            <h1 class="caso-titulo">Caso Araceli</h1>
+            <p>Araceli Cabrera Sánchez Crespo, de oito anos de idade, assassinada em 18 de maio de 1973. Seu corpo foi encontrado seis dias depois, desfigurado por ácido e com marcas de violência e abuso sexual.</p>
+            <img id="araceli" src="../IMAGENS/araceli.png" alt="Foto da Araceli">
+        </section>
+    </main>
+</body>
+</html>
