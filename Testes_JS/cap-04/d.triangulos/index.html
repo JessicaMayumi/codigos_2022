@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulos</title>
+</head>
+<body>
+    <h1>Lados de um Triângulo</h1>
+    <form>
+        <label for="inLado1">Lado A: </label><input type="number" id="inLado1">
+        <br><br>
+        <label for="inLado2">Lado B: </label><input type="number" id="inLado2">
+        <br><br>
+        <label for="inLado3">Lado C: </label><input type="number" id="inLado3">
+        <br><br>
+        <input type="submit" value="Varificar Lados">
+    </form>
+    <h2></h2>
+    <h3></h3>
+    <script>
+        const frm = document.querySelector("form")
+        const resp1 = document.querySelector("h2")
+        const resp2 = document.querySelector("h3")
+
+        frm.addEventListener("submit", (e)=> {
+            const ladoA = Number(frm.inLado1.value)
+            const ladoB = Number(frm.inLado2.value)
+            const ladoC = Number(frm.inLado3.value)
+
+            let tipo
+            let verifica
+            
+            if (!( ladoA+ladoB>ladoC && ladoA+ladoC>ladoB && ladoB+ladoC>ladoA )) {
+                verifica = "não "
+                tipo = ""
+            }
+            else {
+                verifica = ""
+                if (ladoA==ladoB && ladoA==ladoC) {
+                    tipo = "Tipo: Equilátero"
+                } else if (ladoA!=ladoB && ladoA!=ladoC && ladoB!=ladoC) {
+                    tipo = "Tipo: Escaleno"
+                } else {
+                    tipo = "Tipo: Isósceles"
+                }
+            }
+
+            resp1.innerText = `Os lados ${verifica}podem formar um triângulo.`
+            resp2.innerText = tipo
+
+            e.preventDefault()
+        })
+    </script>
+</body>
+</html>
